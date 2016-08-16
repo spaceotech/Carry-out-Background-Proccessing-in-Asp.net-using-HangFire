@@ -14,7 +14,8 @@ namespace HangFireDemo.Controllers
         #region "HangFire Test"
         [ActionName("HangTest")]
         [HttpPost]
-        public HttpResponseMessage HangTest() // This is Post Method , you can check this Method with Google Chrome Extension - PostMan Rest client/Advance Rest Client
+        public HttpResponseMessage HangTest() // This is Post Method , you can check this Method with Google Chrome Extension - PostMan Rest client/Advance Rest Client 
+                                                //please use http://localhost/api/hangfire/hangtest as url for testing
         {
             string hangTest = "Success";
 
