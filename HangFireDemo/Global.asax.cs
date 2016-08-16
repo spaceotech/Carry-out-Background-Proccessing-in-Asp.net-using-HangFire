@@ -24,7 +24,7 @@ namespace HangFireDemo
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            var storage = new SqlServerStorage(System.Configuration.ConfigurationManager.ConnectionStrings["HangFireEntity"].ConnectionString);
+            var storage = new SqlServerStorage(System.Configuration.ConfigurationManager.ConnectionStrings["HangFireEntity"].ConnectionString); // here HangFireEntity is Connection string of the HangFire DB which is in Sql Server , it is in web.config file under the connection string section
             var options = new Hangfire.BackgroundJobServerOptions();
 
             var _backgroundJobServer = new Hangfire.BackgroundJobServer(options, storage);
