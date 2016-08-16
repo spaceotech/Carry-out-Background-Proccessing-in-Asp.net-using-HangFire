@@ -11,10 +11,10 @@ namespace HangFireDemo.Controllers
 {
     public class HangFireController : ApiController
     {
-        #region "Hang Test"
+        #region "HangFire Test"
         [ActionName("HangTest")]
         [HttpPost]
-        public HttpResponseMessage HangTest()
+        public HttpResponseMessage HangTest() // This is Post Method , you can check this Method with Google Chrome Extension - PostMan Rest client/Advance Rest Client
         {
             string hangTest = "Success";
 
